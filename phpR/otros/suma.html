@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./jquery-easyui-1.10.19/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="./jquery-easyui-1.10.19/themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="./jquery-easyui-1.10.19/demo/demo.css">
+    <script type="text/javascript" src="./jquery-easyui-1.10.19/jquery.min.js"></script>
+    <script type="text/javascript" src="./jquery-easyui-1.10.19/jquery.easyui.min.js"></script>
+    <script src="./js/operaciones.js"></script>
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+
+        body{
+            background-color: rgb(32, 36, 33);
+        }
+
+        .contenedor {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            padding: 20px;
+        }
+
+        .contenedor-form {
+            background-color: rgb(106, 175, 152);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px;
+
+        }
+
+        .contenedor-form>div {
+            margin-left: 30%;
+        }
+
+        @media screen and (max-width: 768px) {
+            .contenedor {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+
+        <div class="contenedor-form">
+
+            <div style="margin-bottom:20px">
+                <input class="easyui-textbox" label="Numero 1:" labelPosition="top" data-options="prompt:'numero'" style="width:50%;" id="txtprimerNs">
+            </div>
+
+            <div style="margin-bottom:20px">
+                <input class="easyui-textbox" label="Numero 2:" labelPosition="top" data-options="prompt:'numero'" style="width:50%;" id="txtsegundoNs">
+            </div>
+
+            <div>
+                <p id="suma"></p>
+            </div>
+
+            <div>
+                <a href="#" class="easyui-linkbutton" iconCls="icon-ok" style="width:50%;height:32px" onclick="calcularSuma()">SUMAR</a>
+            </div>
+        </div>
+        <div class="contenedor-form">
+
+            <div style="margin-bottom:20px">
+                <input class="easyui-textbox" label="Numero 1:" labelPosition="top" data-options="prompt:'numero'" style="width:50%;" id="txtprimerNr">
+            </div>
+
+            <div style="margin-bottom:20px">
+                <input class="easyui-textbox" label="Numero 2:" labelPosition="top" data-options="prompt:'numero'" style="width:50%;" id="txtsegundoNr">
+            </div>
+
+            <div>
+                <p id="resta"></p>
+            </div>
+
+            <div>
+                <a href="#" class="easyui-linkbutton" iconCls="icon-ok" style="width:50%;height:32px" onclick="calcularResta()">RESTAR</a>
+            </div>
+        </div>
+
+        <div class="contenedor-form">
+
+            <div style="margin-bottom:20px">
+                <input class="easyui-textbox" label="Numero 1:" labelPosition="top" data-options="prompt:'numero'" style="width:50%;" id="txtprimerNm">
+            </div>
+
+            <div style="margin-bottom:20px">
+                <input class="easyui-textbox" label="Numero 2:" labelPosition="top" data-options="prompt:'numero'" style="width:50%;" id="txtsegundoNm">
+            </div>
+
+            <div>
+                <p id="multiplicacion"></p>
+            </div>
+
+            <div>
+                <a href="#" class="easyui-linkbutton" iconCls="icon-ok" style="width:50%;height:32px" onclick="calcularMultiplicacion()">MULTIPLICAR</a>
+            </div>
+        </div>
+
+        <div class="contenedor-form">
+
+            <div style="margin-bottom:20px">
+                <input class="easyui-textbox" label="Numero 1:" labelPosition="top" data-options="prompt:'numero'" style="width:50%;" id="txtprimerNd">
+            </div>
+
+            <div style="margin-bottom:20px">
+                <input class="easyui-textbox" label="Numero 2:" labelPosition="top" data-options="prompt:'numero'" style="width:50%;" id="txtsegundoNd">
+            </div>
+
+            <div>
+                <p id="division"></p>
+            </div>
+
+            <div>
+                <a href="#" class="easyui-linkbutton" iconCls="icon-ok" style="width:50%;height:32px" onclick="calcularDivision()">DIVIDIR</a>
+            </div>
+        </div>
+    </div>
+
+    <!--
+        <input id="txtprimerN" name="txtprimerN" type="text">
+        <br>
+        <input id="txtsegundoN" name="txtsegundoN" type="text">
+        <br>
+        <input type="button" name="sumar" id="sumar" value="CALCULAR" onclick="calcular()">
+        <br>
+        
+    <p id="suma"></p>
+    <p id="resta"></p>
+    <p id="multiplicacion"></p>
+    <p id="division"></p>
+    
+    <br>
+    <br>
+-->
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(198, 134, 134);
+    
+}
+
+header{
+    position: relative;
+    margin: auto;
+    text-align: center;
+    padding: 0;
+}
+
+nav{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-color: brown;
+}
+
+nav > ul{
+    position: relative;
+    margin: auto;
+    color: aqua;
+    width: 50%;
+    text-align: none;
+}
+
+nav > ul > li{
+    display: inline-block;
+    margin: auto;
+    width: 24%;
+    line-height: 50px;
+    list-style: none;
+}
+
+nav > ul > li > a{
+    text-decoration: none;
+    color: white;
+}
+
+section{
+    position: relative;
+    padding: 5px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color: brown;
+    text-align: center;
+    color: white;
+    width: 100%;
+
+}
+
